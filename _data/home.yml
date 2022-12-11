@@ -19,7 +19,7 @@ project_entries:
     desc: Open Banking Open Data navigator 
 
   - title: Innovation Stocks
-    url: innovation_portfolio.md
+    url: innovation_portfolio
     desc: A brief description of key innovation investments
 
 footer_entries:
