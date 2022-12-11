@@ -43,18 +43,18 @@
 14. CRSP, NTLA, EDIT
     - Advanced genome editing companies
     - Thumb twiddling, while waiting for impactful progress and reasonable entry points
-15. MRVI
-    - Provides products/reagents for R&D of various therapies, vaccines and diagnostic solutions
-    - Biggest supplier of mRNA vaccine reagents to Pfizer, BioNTech and Moderna.
-16. SDGR, RXRX, ABCL
+15. SDGR, RXRX, ABCL
     1. Providers of simulation and computing software platforms for accelerated drug discovery.
-17. NIO
+16. NIO
     - Manufacturer of affordable luxury EVs with autonomous driving experience.
 
 ## Enablers
 
 1. VALE, FCX, RIO, BHP
    - Mineral resources for the electrification revolution and EV industry.
-2. PYR
+2. MRVI
+    - Provides products/reagents for R&D of various therapies, vaccines and diagnostic solutions
+    - Biggest supplier of mRNA vaccine reagents to Pfizer, BioNTech and Moderna.
+3. PYR
    - Provides green industrial waste management solutions and industrial process optimisations.
    - The CEO's unwillingness to disclose names of newly signed on customers is a red flag and cause for worry.
