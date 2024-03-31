@@ -62,7 +62,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby: [2.7, 3, 3.1, 3.2]
+        ruby: [3.2]
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -76,8 +76,6 @@ jobs:
           bundler-cache: true
       - name: Install and Build 🔧
         run: |
-          #gem install bundler:2.5.7
-          #gem install bundler
           bundle update
           pip3 install --upgrade jupyter
           export JEKYLL_ENV=production
@@ -87,11 +85,8 @@ jobs:
           npm install -g purgecss
           purgecss -c purgecss.config.js
       - name: Deploy 🚀
-        run: echo 'bypass'
-        #if: github.event_name != 'pull_request'
-        #uses: JamesIves/github-pages-deploy-action@v4
-        #with:
-        #  folder: _site
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: _site
+        #id: deployment
+        #uses: actions/deploy-pages@v4
