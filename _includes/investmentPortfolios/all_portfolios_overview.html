@@ -1,0 +1,129 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- Include the ECharts file you just downloaded -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+</head>
+
+<body>
+    <b>rendering below:</b> <br />
+    <!-- Prepare a DOM with a defined width and height for ECharts -->
+    <div id="mainAllPortfoliosOview" style="width: 700px;height:500px;"></div>
+    <script type="text/javascript">
+
+        var app = {};
+        //var chartDom = document.getElementById('main');
+
+        // Initialize the echarts instance based on the prepared dom
+        //var myChart = echarts.init(document.getElementById('main'));
+        var myChart = echarts.init(chartDom, 'dark');
+        var option;
+
+        var chartDom = document.getElementById('mainAllPortfoliosOview');
+
+            var overview_securities_legend = [
+                'CRSP',
+                'MSFT',
+                'AMAT',
+                'AMZN',
+                'GOOGL',
+                'NU',
+                'STNE',
+                'NVO',
+                'NTLA'
+            ];
+
+            var overview_individual_portfolio_values = [
+                { value: 1548, name: 'ISA' },
+                { value: 775, name: 'TRADE' },
+                { value: 679, name: 'SIPP', selected: true }
+            ];
+
+            var overview_individual_securities_position_values = [
+                { value: (210 + 335 + 285) * 72, name: 'CRSP' },
+                { value: (120 + 5 + 15) * 425.2, name: 'MSFT' },
+                { value: (100 + 100) * 200.75, name: 'AMAT' },
+                { value: (200 + 1500 + 420) * 11.5, name: 'NU' },
+                { value: (35 + 50 + 20) * 178.75, name: 'AMZN' },
+                { value: (280 + 175 + 150) * 27.7, name: 'NTLA' },
+                { value: (950 + 213) * 17.3, name: 'STNE' },
+                { value: 97 * 134.5, name: 'NVO' },
+                { value: 50 * 143, name: 'GOOGL' }
+            ];
+
+            option = {
+                tooltip: {
+                    trigger: 'item',
+                    formatter: '{a} <br/>{b}: {c} ({d}%)'
+                },
+                legend: {
+                    data: overview_securities_legend
+                },
+                series: [
+                    {
+                        name: 'Portfolio',
+                        type: 'pie',
+                        selectedMode: 'single',
+                        radius: [0, '30%'],
+                        label: {
+                            position: 'inner',
+                            fontSize: 14
+                        },
+                        labelLine: {
+                            show: false
+                        },
+                        data: overview_individual_portfolio_values
+                    },
+                    {
+                        name: 'Stock:',
+                        type: 'pie',
+                        radius: ['45%', '60%'],
+                        labelLine: {
+                            length: 20
+                        },
+                        label: {
+                            formatter: '{a|{a}}{abg|}\n{hr|}\n  {b|{b}：}{c}  {per|{d}%}  ',
+                            backgroundColor: '#F6F8FC',
+                            borderColor: '#8C8D8E',
+                            borderWidth: 1,
+                            borderRadius: 4,
+                            rich: {
+                                a: {
+                                    color: '#6E7079',
+                                    lineHeight: 22,
+                                    align: 'center'
+                                },
+                                hr: {
+                                    borderColor: '#8C8D8E',
+                                    width: '100%',
+                                    borderWidth: 1,
+                                    height: 0
+                                },
+                                b: {
+                                    color: '#4C5058',
+                                    fontSize: 14,
+                                    fontWeight: 'bold',
+                                    lineHeight: 33
+                                },
+                                per: {
+                                    color: '#fff',
+                                    backgroundColor: '#4C5058',
+                                    padding: [3, 4],
+                                    borderRadius: 4
+                                }
+                            }
+                        },
+                        data: overview_individual_securities_position_values
+                    }
+                ]
+            };
+
+            option && myChart.setOption(option);
+
+
+    </script>
+</body>
+
+</html>

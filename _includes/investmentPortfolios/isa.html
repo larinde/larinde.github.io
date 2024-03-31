@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>ECharts</title>
+    <!-- Include the ECharts file you just downloaded -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js" ></script>
+</head>
+
+<body>
+    <b>rendering below:</b> <br/>
+    <!-- Prepare a DOM with a defined width and height for ECharts -->
+    <div id="mainIsa" style="width: 600px;height:400px;"></div><br/>
+    <script type="text/javascript">
+
+    var app = {};
+    var chartDom = document.getElementById('mainIsa');
+
+    // Initialize the echarts instance based on the prepared dom
+    //var myChart = echarts.init(document.getElementById('main'));
+    var myChart = echarts.init(chartDom, 'dark');
+    var option;
+
+    var portfolio_data = [
+        ['product', 'BookCost', 'MarketValue'],
+        ['CRSP', 16947.65, 24438.25],
+        ['NU', 8460.0, 17415.0],
+        ['STNE', 13841.5, 16435.0],
+        ['AMZN', 6695.0, 8721.0],
+        ['SOFI', 10055.37, 7880.63],
+        ['GOOGL', 5348.0, 7059.0],
+        ['NTLA', 4900.0, 4952.5],
+        ['MSFT', 1161.94, 2082.1],
+        ['EDIT', 2164.5, 1585.35],
+        ['QS', 919.0, 569.0],
+        ['PYR', 5490.0, 485.0],
+        ['SNDL', 12030.15, 443.8],
+        ['SLDP', 855.0, 414.0],
+        ['AQB', 10281.06, 341.28],
+        ['BNGO', 9430.5, 151.5],
+        ['PACB', 167.1, 56.85]
+    ];
+
+    option = {
+        legend: {},
+        tooltip: {},
+        dataset: {
+            source: portfolio_data
+        },
+        xAxis: { type: 'category' },
+        yAxis: {},
+        // Declare several bar series, each will be mapped
+        // to a column of dataset.source by default.
+        series: [{ type: 'bar' }, { type: 'bar' }]
+    };
+
+    option && myChart.setOption(option);
+    </script>
+</body>
+
+</html>

@@ -44,7 +44,7 @@
     - Advanced genome editing companies
     - Thumb twiddling, while waiting for impactful progress and reasonable entry points
 15. Schrödinger (SDGR), Recursion Pharmaceuticals (RXRX), AbCellera Biologics (ABCL)
-    1. Providers of simulation and computing software platforms for accelerated drug discovery.
+    - Providers of simulation and computing software platforms for accelerated drug discovery.
 16. NIO Inc. (NIO)
     - Manufacturer of affordable luxury EVs with autonomous driving experience.
 
