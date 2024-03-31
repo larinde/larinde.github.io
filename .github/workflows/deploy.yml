@@ -77,7 +77,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           #gem install bundler:2.5.7
-          gem install bundler
+          #gem install bundler
           bundle update
           pip3 install --upgrade jupyter
           export JEKYLL_ENV=production
