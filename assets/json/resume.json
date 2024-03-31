@@ -46,14 +46,14 @@
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
+      "institution": "University of Duisburg-Essen, Germany",
+      "location": "Duisburg, Germany",
       "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
+      "area": "Computer Science & Communications Engineering",
+      "studyType": "Diplom Ingenieur",
       "startDate": "1905-01-01",
       "endDate": "1905-01-01",
-      "score": "10",
+      "score": "",
       "courses": ["Theory of Relativity"]
     }
   ],
