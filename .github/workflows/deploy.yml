@@ -76,9 +76,10 @@ jobs:
           bundler-cache: true
       - name: Install and Build 🔧
         run: |
-          bundle update
           pip3 install --upgrade jupyter
           export JEKYLL_ENV=production
+          bundle install
+          bundle update
           bundle exec jekyll build --lsi
       - name: Purge unused CSS 🧹
         run: |
