@@ -24,8 +24,8 @@ $$
 
 ## TRADE
 
-WIP
+WIP 1
 
 ## ING
 
-WIP
+WIP 2
