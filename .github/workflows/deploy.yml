@@ -54,37 +54,46 @@ permissions:
   id-token: write
 
 jobs:
-  deploy:
-    # available images: https://github.com/actions/runner-images#available-images
+  # Build job
+  build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        ruby: [3.1, 3.2]
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version:  ${{ matrix.ruby }}
-          bundler-cache: false
-      - name: Install and Build 🔧
+          ruby-version: '3.1' # Not needed with a .ruby-version file
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          cache-version: 1 # Increment this number if you need to re-download cached gems
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Build with Jekyll
+        # Outputs to the './_site' directory by default
         run: |
-          pip3 install --upgrade jupyter
           export JEKYLL_ENV=production
-          bundle install
-          bundle update
-          bundle exec jekyll build --lsi
+          pip3 install --upgrade jupyter
+          bundle exec jekyll build --lsi --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: _site
-        #id: deployment
-        #uses: actions/deploy-pages@v4
+      - name: Upload artifact
+        # Automatically uploads an artifact from the './_site' directory by default
+        uses: actions/upload-pages-artifact@v3
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages  🚀
+        id: deployment
+        uses: actions/deploy-pages@v4
+
