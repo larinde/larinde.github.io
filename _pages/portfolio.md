@@ -10,10 +10,6 @@ tags : [echarts]
 
 ---
 
-## ISA
-
-{% include investmentPortfolios/isa.html %}
-
 ## Overview
 
 {% include investmentPortfolios/all_portfolios_overview.html %}

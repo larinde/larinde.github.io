@@ -27,13 +27,25 @@ isa_portfolio:  |
     - Manufactures 3D-printers and provides additive manufacturing solutions across a very broad range of industries.
     - Challenges in automation and mass production of 3D-printed components.
     - Probably still struggling to streamline processes across acquired businesses.
-2. Markforged Holding Corp. (MKFG)
-    - Same as Desktop Metal (DM) but has advanced software solutions for automated and remote management of 3D-printing hardware.
 
 ## FinTech
 
 1. NU Holdings Ltd. (NU)
     - Latin America's largest fintech and neobank
-2. StoneCo Ltd. (STNE)
-    - Similar to Nu Holdings but caters for merchants and SMB (Small and Midsize Businesses).
+2. SOFI (SOFI)
+    - TODO
 
+## AI (Software, Data Centers and  Semiconductors)
+
+1. Microsoft (MSFT)
+   - __TODO__
+2. Amazon (AMZN)
+   - __TODO__
+3. Google (GOOGL)
+   - __TODO__
+4. Taiwan Semiconductors (TSM)
+   - __TODO__
+5. Applied Materials (AMAT)
+   - __TODO__
+6. Lam Research (LRCX)
+   - __TODO__
