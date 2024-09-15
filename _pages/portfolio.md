@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /portfolio/
-title: portfolio
+title: portfolio overview
 description: Investment portfolio insights
 nav: true
 nav_order: 6
@@ -22,10 +22,8 @@ $$
 \ SMA_{200} = \frac{\sum_{k=1}^{200} (ClosingPrice_k)} {200}
 $$
 
-## TRADE
+## Trading Account
 
-WIP 1
+## ISA Account
 
-## ING
-
-WIP 2
+## SIPP Account
