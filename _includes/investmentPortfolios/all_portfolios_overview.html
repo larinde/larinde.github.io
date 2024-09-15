@@ -14,10 +14,10 @@
     <script type="text/javascript">
 
         var app = {};
-        var myChart = echarts.init(chartDom, 'dark');
+        var chartDom = document.getElementById('mainOverview');
+        var isaChart = echarts.init(chartDom, 'dark');
         var option;
 
-        var chartDom = document.getElementById('mainOverview');
 
             var overview_securities_legend = [
                 'CRSP',
@@ -118,7 +118,7 @@
                 ]
             };
 
-            option && myChart.setOption(option);
+            option && isaChart.setOption(option);
 
 
     </script>
