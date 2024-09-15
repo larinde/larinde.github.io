@@ -38,14 +38,14 @@ isa_portfolio:  |
 ## AI (Software, Data Centers and  Semiconductors)
 
 1. Microsoft (MSFT)
-   - __TODO__
+   - _TODO_
 2. Amazon (AMZN)
-   - __TODO__
+   - _TODO_
 3. Google (GOOGL)
-   - __TODO__
+   - _TODO_
 4. Taiwan Semiconductors (TSM)
-   - __TODO__
+   - _TODO_
 5. Applied Materials (AMAT)
-   - __TODO__
+   - _TODO_
 6. Lam Research (LRCX)
-   - __TODO__
+   - _TODO_
