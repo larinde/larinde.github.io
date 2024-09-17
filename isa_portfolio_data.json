@@ -1,0 +1,21 @@
+{
+  "isaPortfolio": [
+    {"position":"product", "bookCost": "BookCost", "marketValue": "MarketValue"},
+    {"position":"AMZN", "bookCost": 34516, "marketValue": 37626},
+    {"position":"NU",    "bookCost": 9601.0, "marketValue": 24185.0},
+    {"position":"SOFI",  "bookCost": 10059, "marketValue": 9185},
+    {"position":"GOOGL", "bookCost": 5348.0, "marketValue": 7974.0},
+    {"position":"CAVA",  "bookCost": 2951, "marketValue": 4908},
+    {"position":"TSM",   "bookCost": 6526, "marketValue": 7765},
+    {"position":"MSFT",  "bookCost": 1162, "marketValue": 2151},
+    {"position":"AMAT",  "bookCost": 4440, "marketValue": 3798},
+    {"position":"LRCX",  "bookCost": 9509, "marketValue": 7737},
+    {"position":"NTLA",  "bookCost": 3590.0, "marketValue": 3408},
+    {"position":"CRSP",  "bookCost": 3721, "marketValue": 3526},
+    {"position":"EDIT",  "bookCost": 2222, "marketValue": 815.83},
+    {"position":"QS",    "bookCost": 4759, "marketValue": 4216},
+    {"position":"SNDL",  "bookCost": 12030.15, "marketValue": 656},
+    {"position":"AQB",   "bookCost": 10281.06, "marketValue": 163.20},
+    {"position":"PACB",  "bookCost": 797.01, "marketValue": 693}
+  ]
+}

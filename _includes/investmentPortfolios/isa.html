@@ -13,27 +13,36 @@
     <div id="mainIsa" style="width: 600px;height:400px;"></div><br/>
     <script type="text/javascript">
 
+    var isaPortfolioData = []    
+    fetch("https://raw.githubusercontent.com/larinde/larinde.github.io/main/assets/json/resume.json")
+            .then((response) => response.json())
+            .then(json => {
+                json['certificates'].forEach(cert =>{
+                    console.log(cert['name'])
+                })
+            });    
+
     var app = {};
     var chartDom = document.getElementById('mainIsa');
 
-    var myChart = echarts.init(chartDom, 'dark');
+    var isaChart = echarts.init(chartDom, 'dark');
     var option;
 
     var portfolio_data = [
-        ['product', 'BookCost', 'MarketValue'],
-        ['NU', 9601.0, 23504.0],
+        ['Position', 'BookCost', 'MarketValue'],
+        ['AMZN', 34516, 37626],
+        ['NU', 9601.0, 24185.0],
+        ['SOFI', 10059, 9185],
+        ['GOOGL', 5348.0, 7974.0],
         ['CAVA', 2951, 4908],
-        ['SOFI', 10059, 8677],
-        ['MSFT', 1162, 2151],
-        ['AMZN', 34516, 37224],
-        ['GOOGL', 5348.0, 7856.0],
-        ['AMAT', 4440, 3769],
         ['TSM', 6526, 7765],
-        ['LRCX', 9509, 7697],
-        ['NTLA', 3590.0, 3293],
-        ['CRSP', 3721, 3418],
-        ['EDIT', 2222, 813.83],
-        ['QS', 4759, 4130],
+        ['MSFT', 1162, 2151],
+        ['AMAT', 4440, 3798],
+        ['LRCX', 9509, 7737],
+        ['NTLA', 3590.0, 3408],
+        ['CRSP', 3721, 3526],
+        ['EDIT', 2222, 815.83],
+        ['QS', 4759, 4216],
         ['SNDL', 12030.15, 656],
         ['AQB', 10281.06, 163.20],
         ['PACB', 797.01, 693]
@@ -52,7 +61,7 @@
         series: [{ type: 'bar' }, { type: 'bar' }]
     };
 
-    option && myChart.setOption(option);
+    option && isaChart.setOption(option);
     </script>
 </body>
 
