@@ -5,63 +5,63 @@
     <title>ISA Portfolio</title>
     <!-- Include the ECharts file you just downloaded -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js" ></script>
-</head>
+    <script type="text/javascript">
+        var portfolioData = [
+            
+            ];
+        var url = "https://raw.githubusercontent.com/larinde/larinde.github.io/main/isa_portfolio_data.json";
+        async function loadPortfolioData() {
+            const response = await fetch(url)
+            const json = await response.json()
+            json['isaPortfolio'].forEach(cert => {
+                portfolioData.push([cert['position'], cert['bookCost'], cert['marketValue']])
+            });
+            renderPortfolioCharts();
+            //return data;
+        };
 
+            function renderPortfolioCharts() {
+                    console.log('******* rendering portfolio charts *******')
+                    var isaPortfolioData = [
+                        ['Position', 'BookCost', 'MarketValue'],
+                        ['AMZN', 34516, 37626],
+                        ['NU', 9601.0, 24185.0],
+                        ['SOFI', 10059, 9185],
+                        ['GOOGL', 5348.0, 7974.0],
+                        ['CAVA', 2951, 4908]
+                    ];
+
+
+                    var app = {};
+                    var chartDom = document.getElementById('mainIsa');
+                    var isaChart = echarts.init(chartDom, 'dark');
+                    var option;
+
+                    option = {
+                        legend: {},
+                        tooltip: {},
+                        dataset: {
+                            source: portfolioData
+                        },
+                        xAxis: { type: 'category' },
+                        yAxis: {},
+                        // Declare several bar series, each will be mapped
+                        // to a column of dataset.source by default.
+                        series: [{ type: 'bar' }, { type: 'bar' }]
+                    };
+
+                    option && isaChart.setOption(option);
+                }
+
+    </script>
+</head>
 <body>
     <b>rendering below:</b> <br/>
     <!-- Prepare a DOM with a defined width and height for ECharts -->
     <div id="mainIsa" style="width: 600px;height:400px;"></div><br/>
     <script type="text/javascript">
-
-    var isaPortfolioData = []    
-    fetch("https://raw.githubusercontent.com/larinde/larinde.github.io/main/assets/json/resume.json")
-            .then((response) => response.json())
-            .then(json => {
-                json['certificates'].forEach(cert =>{
-                    console.log(cert['name'])
-                })
-            });    
-
-    var app = {};
-    var chartDom = document.getElementById('mainIsa');
-
-    var isaChart = echarts.init(chartDom, 'dark');
-    var option;
-
-    var portfolio_data = [
-        ['Position', 'BookCost', 'MarketValue'],
-        ['AMZN', 34516, 37626],
-        ['NU', 9601.0, 24185.0],
-        ['SOFI', 10059, 9185],
-        ['GOOGL', 5348.0, 7974.0],
-        ['CAVA', 2951, 4908],
-        ['TSM', 6526, 7765],
-        ['MSFT', 1162, 2151],
-        ['AMAT', 4440, 3798],
-        ['LRCX', 9509, 7737],
-        ['NTLA', 3590.0, 3408],
-        ['CRSP', 3721, 3526],
-        ['EDIT', 2222, 815.83],
-        ['QS', 4759, 4216],
-        ['SNDL', 12030.15, 656],
-        ['AQB', 10281.06, 163.20],
-        ['PACB', 797.01, 693]
-    ];
-
-    option = {
-        legend: {},
-        tooltip: {},
-        dataset: {
-            source: portfolio_data
-        },
-        xAxis: { type: 'category' },
-        yAxis: {},
-        // Declare several bar series, each will be mapped
-        // to a column of dataset.source by default.
-        series: [{ type: 'bar' }, { type: 'bar' }]
-    };
-
-    option && isaChart.setOption(option);
+        loadPortfolioData();
+        //console.log("DONE")
     </script>
 </body>
 

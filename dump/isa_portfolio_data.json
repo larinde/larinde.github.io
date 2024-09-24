@@ -1,0 +1,89 @@
+{
+  "isaPortfolio": [
+    {
+      "position": "Position",
+      "bookCost": "BookCost",
+      "marketValue": "MarketValue"
+    },
+    {
+      "position": "AMZN",
+      "bookCost": 34516,
+      "marketValue": 38702
+    },
+    {
+      "position": "NU",
+      "bookCost": 9601.0,
+      "marketValue": 23712.0
+    },
+    {
+      "position": "SOFI",
+      "bookCost": 10059,
+      "marketValue": 8799
+    },
+    {
+      "position": "GOOGL",
+      "bookCost": 5348.0,
+      "marketValue": 8118.50
+    },
+    {
+      "position": "CAVA",
+      "bookCost": 2951,
+      "marketValue": 3823.20
+    },
+    {
+      "position": "TSM",
+      "bookCost": 6526,
+      "marketValue": 8191.80
+    },
+    {
+      "position": "MSFT",
+      "bookCost": 1162,
+      "marketValue": 2151
+    },
+    {
+      "position": "AMAT",
+      "bookCost": 4440,
+      "marketValue": 3798
+    },
+    {
+      "position": "LRCX",
+      "bookCost": 9509,
+      "marketValue": 7943.40
+    },
+    {
+      "position": "NTLA",
+      "bookCost": 3612.24,
+      "marketValue": 3408
+    },
+    {
+      "position": "CRSP",
+      "bookCost": 4974.86,
+      "marketValue": 3526
+    },
+    {
+      "position": "EDIT",
+      "bookCost": 2222,
+      "marketValue": 815.83
+    },
+    {
+      "position": "QS",
+      "bookCost": 4759,
+      "marketValue": 4216
+    },
+    {
+      "position": "SNDL",
+      "bookCost": 12030.15,
+      "marketValue": 656
+    },
+    {
+      "position": "AQB",
+      "bookCost": 10281.06,
+      "marketValue": 163.20
+    },
+    {
+      "position": "PACB",
+      "bookCost": 797.01,
+      "marketValue": 693
+    }
+  ]
+}
