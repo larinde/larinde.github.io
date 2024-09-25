@@ -7,61 +7,100 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js" ></script>
     <script type="text/javascript">
         var portfolioData = [
-            
-            ];
+          ['Position', 'BookCost', 'MarketValue']
+        ];
+        var portfolioPieChartData = [];
         var url = "https://raw.githubusercontent.com/larinde/larinde.github.io/main/dump/isa_portfolio_data.json";
+
         async function loadPortfolioData() {
             const response = await fetch(url)
             const json = await response.json()
             json['isaPortfolio'].forEach(cert => {
                 portfolioData.push([cert['position'], cert['bookCost'], cert['marketValue']])
+                portfolioPieChartData.push({value: cert['marketValue'], name: cert['position']})
             });
+            portfolioData.shift();
+            portfolioPieChartData.shift();
             renderPortfolioCharts();
-            //return data;
+            renderPortfolioPieChart();
         };
 
-            function renderPortfolioCharts() {
-                    console.log('******* rendering portfolio charts *******')
-                    var isaPortfolioData = [
-                        ['Position', 'BookCost', 'MarketValue'],
-                        ['AMZN', 34516, 37626],
-                        ['NU', 9601.0, 24185.0],
-                        ['SOFI', 10059, 9185],
-                        ['GOOGL', 5348.0, 7974.0],
-                        ['CAVA', 2951, 4908]
-                    ];
+        function renderPortfolioCharts() {
+                //console.log('******* rendering portfolio bar chart *******')
+                var barChartTitle = "Asset Distribution"
+                var app = {};
+                var barChartDom = document.getElementById('portfolioBarChart');
+                var isaChart = echarts.init(barChartDom, 'dark');
+                var option;
 
+                option = {
+                    title: {
+                        subtext: barChartTitle,
+                        left: 'center'
+                    },
+                    legend: {
+                        orient: 'horizontal',
+                        left: 'left'
+                    },
+                    tooltip: {},
+                    dataset: {
+                        source: portfolioData
+                    },
+                    xAxis: { type: 'category' },
+                    yAxis: {},
+                    // Declare several bar series, each will be mapped
+                    // to a column of dataset.source by default.
+                    series: [{ type: 'bar' }, { type: 'bar' }]
+                };
+                option && isaChart.setOption(option);
+            }
 
-                    var app = {};
-                    var chartDom = document.getElementById('mainIsa');
-                    var isaChart = echarts.init(chartDom, 'dark');
-                    var option;
+            
+            function renderPortfolioPieChart() {
+                var pieChartDom = document.getElementById('portfolioPieChart');
+                var pieChart = echarts.init(pieChartDom, 'dark');
+                var pieChartOption;
+                var pieChartTitle = 'ISA Portfolio Allocation';
 
-                    option = {
-                        legend: {},
-                        tooltip: {},
-                        dataset: {
-                            source: portfolioData
-                        },
-                        xAxis: { type: 'category' },
-                        yAxis: {},
-                        // Declare several bar series, each will be mapped
-                        // to a column of dataset.source by default.
-                        series: [{ type: 'bar' }, { type: 'bar' }]
-                    };
-
-                    option && isaChart.setOption(option);
-                }
+                pieChartOption = {
+                    title: {
+                        subtext: pieChartTitle,
+                        left: 'center'
+                    },
+                    tooltip: {
+                        trigger: 'item'
+                    },
+                    legend: {
+                        orient: 'vertical',
+                        left: 'left'
+                    },
+                    series: [
+                        {
+                            name: 'Market Value (USD)',
+                            type: 'pie',
+                            radius: '50%',
+                            data: portfolioPieChartData,
+                            emphasis: {
+                                itemStyle: {
+                                    shadowBlur: 10,
+                                    shadowOffsetX: 0,
+                                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                }
+                            }
+                        }
+                    ]
+                };
+                pieChartOption && pieChart.setOption(pieChartOption);
+            }
 
     </script>
 </head>
 <body>
-    <b>rendering below:</b> <br/>
     <!-- Prepare a DOM with a defined width and height for ECharts -->
-    <div id="mainIsa" style="width: 600px;height:400px;"></div><br/>
+    <div id="portfolioBarChart" style="width: 600px;height:400px;"></div><br/>
+    <div id="portfolioPieChart" style="width: 600px;height:400px;"></div><br/>
     <script type="text/javascript">
         loadPortfolioData();
-        //console.log("DONE")
     </script>
 </body>
 
