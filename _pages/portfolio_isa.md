@@ -2,7 +2,7 @@
 layout: page
 permalink: /portfolio_isa/
 title: isa portfolio
-description: ISA portfolio insights
+description: Portfolio Insights
 nav: true
 nav_order: 6
 category : js
