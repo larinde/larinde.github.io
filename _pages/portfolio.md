@@ -25,4 +25,3 @@ tags : [echarts]
 $$
 \ SMA_{200} = \frac{\sum_{k=1}^{200} (ClosingPrice_k)} {200}
 $$
-
