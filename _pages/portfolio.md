@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /portfolio/
-title: portfolio overview
+title: Portfolio Overview
 description: Investment portfolio insights
 nav: true
 nav_order: 6
@@ -14,7 +14,7 @@ tags : [echarts]
 
 {% include investmentPortfolios/all_portfolios_overview.html %}
 
-## ISA Portfolio
+### ISA Portfolio
 
 {% include investmentPortfolios/isa.html %}
 
