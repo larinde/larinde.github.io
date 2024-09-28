@@ -3,7 +3,7 @@ layout: page
 permalink: /investment_themes/
 title: Investment Themes
 description: 
-nav: true
+nav: false
 nav_order: 6
 category : js
 tags : [echarts]
