@@ -3,7 +3,7 @@ layout: page
 permalink: /portfolio/
 title: portfolio overview
 description: Investment portfolio insights
-nav: true
+nav: false
 nav_order: 6
 category : js
 tags : [echarts]
