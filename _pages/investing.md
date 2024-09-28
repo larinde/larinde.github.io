@@ -1,6 +1,6 @@
 ---
 layout: page
-title: investing
+title: Investing
 nav: true
 nav_order: 8
 dropdown: true
@@ -10,8 +10,5 @@ children:
   - title: divider
   - title: Portfolio Overview
     permalink: /portfolio/
-  - title: divider
-  - title: Portfolio (ISA)
-    permalink: /portfolio_isa/
 ---
 
