@@ -17,110 +17,114 @@
         var isaChart = echarts.init(chartDom, 'dark');
         var option;
 
+        var overview_securities_legend = [
+            'CRSP',
+            'CAVA',
+            'NTLA',
+            'MSFT',
+            'AMAT',
+            'LRCX',
+            'NU',
+            'SOFI',
+            'AMZN',
+            'GOOGL',
+            'NVO',
+            'PACB',
+            'QS',
+            'TSM'
+        ];
 
-            var overview_securities_legend = [
-                'CRSP',
-                'CAVA',
-                'NTLA',
-                'MSFT',
-                'AMAT',
-                'LRCX',
-                'NU',
-                'SOFI',
-                'AMZN',
-                'GOOGL',
-                'NVO'
-            ];
+        var overview_individual_portfolio_values = [
+            { value: 89000, name: 'ISA' },
+            { value: 68000, name: 'TRADE' },
+            { value: 72000, name: 'SIPP', selected: true }
+        ];
 
-            var overview_individual_portfolio_values = [
-                { value: 89000, name: 'ISA' },
-                { value: 68000, name: 'TRADE' },
-                { value: 72000, name: 'SIPP', selected: true }
-            ];
+        var overview_individual_securities_position_values = [
+            { value: (100 + 5 + 15) * 430.35, name: 'MSFT' },
+            { value: (35 + 50 + 200) * 186.50, name: 'AMZN' },
+            { value: (100 + 20 + 100) * 205.0, name: 'AMAT' },
+            { value: (200 + 1600 + 440) * 13.9, name: 'NU' },
+            { value: (0 + 0 + 150) * 120.75, name: 'NVO' },
+            { value: (80 + 1121 + 500) * 8.00, name: 'SOFI' },
+            { value: (0 + 50 + 0) * 157.50, name: 'GOOGL' },
+            { value: (0 + 96 + 128) * 48, name: 'CRSP' },
+            { value: (336 + 150 + 206) * 22, name: 'NTLA' },
+            { value: (0 + 10 + 0) * 827.20, name: 'LRCX' },
+            { value: (5 + 30 + 31) * 122.51, name: 'CAVA' },
+            { value: (200 + 390 + 97) * 1.75, name: 'PACB' },
+            { value: (0 + 45 + 50) * 178.0, name: 'TSM' },
+            { value: (75 + 705 + 19) * 6.0, name: 'QS' }
+        ];
 
-            var overview_individual_securities_position_values = [
-                { value: (100 + 5 + 15) * 430.35, name: 'MSFT' },
-                { value: (35 + 50 + 200) * 186.50, name: 'AMZN' },
-                { value: (100 + 20 + 100) * 188.50, name: 'AMAT' },
-                { value: (200 + 1600 + 440) * 14.75, name: 'NU' },
-                { value: (0 + 0 + 150) * 134.5, name: 'NVO' },
-                { value: (0 + 1121 + 500) * 7.74, name: 'SOFI' },
-                { value: (0 + 50 + 0) * 157.50, name: 'GOOGL' },
-                { value: (0 + 96 + 128) * 48, name: 'CRSP' },
-                { value: (336 + 150 + 206) * 22, name: 'NTLA' },
-                { value: (0 + 10 + 0) * 188.50, name: 'LRCX' },
-                { value: (5 + 30 + 31) * 122.51, name: 'CAVA' }
-            ];
-
-            option = {
-                tooltip: {
-                    trigger: 'item',
-                    formatter: '{a} <br/>{b}: {c} ({d}%)'
-                },
-                legend: {
-                    data: overview_securities_legend
-                },
-                series: [
-                    {
-                        name: 'Portfolio',
-                        type: 'pie',
-                        selectedMode: 'single',
-                        radius: [0, '30%'],
-                        label: {
-                            position: 'inner',
-                            fontSize: 14
-                        },
-                        labelLine: {
-                            show: false
-                        },
-                        data: overview_individual_portfolio_values
+        option = {
+            tooltip: {
+                trigger: 'item',
+                formatter: '{a} <br/>{b}: {c} ({d}%)'
+            },
+            legend: {
+                data: overview_securities_legend
+            },
+            series: [
+                {
+                    name: 'Portfolio',
+                    type: 'pie',
+                    selectedMode: 'single',
+                    radius: [0, '30%'],
+                    label: {
+                        position: 'inner',
+                        fontSize: 14
                     },
-                    {
-                        name: 'Stock:',
-                        type: 'pie',
-                        radius: ['45%', '60%'],
-                        labelLine: {
-                            length: 20
-                        },
-                        label: {
-                            formatter: '{a|{a}}{abg|}\n{hr|}\n  {b|{b}：}{c}  {per|{d}%}  ',
-                            backgroundColor: '#F6F8FC',
-                            borderColor: '#8C8D8E',
-                            borderWidth: 1,
-                            borderRadius: 4,
-                            rich: {
-                                a: {
-                                    color: '#6E7079',
-                                    lineHeight: 22,
-                                    align: 'center'
-                                },
-                                hr: {
-                                    borderColor: '#8C8D8E',
-                                    width: '100%',
-                                    borderWidth: 1,
-                                    height: 0
-                                },
-                                b: {
-                                    color: '#4C5058',
-                                    fontSize: 14,
-                                    fontWeight: 'bold',
-                                    lineHeight: 33
-                                },
-                                per: {
-                                    color: '#fff',
-                                    backgroundColor: '#4C5058',
-                                    padding: [3, 4],
-                                    borderRadius: 4
-                                }
+                    labelLine: {
+                        show: false
+                    },
+                    data: overview_individual_portfolio_values
+                },
+                {
+                    name: 'Stock:',
+                    type: 'pie',
+                    radius: ['45%', '60%'],
+                    labelLine: {
+                        length: 20
+                    },
+                    label: {
+                        formatter: '{a|{a}}{abg|}\n{hr|}\n  {b|{b}：}{c}  {per|{d}%}  ',
+                        backgroundColor: '#F6F8FC',
+                        borderColor: '#8C8D8E',
+                        borderWidth: 1,
+                        borderRadius: 4,
+                        rich: {
+                            a: {
+                                color: '#6E7079',
+                                lineHeight: 22,
+                                align: 'center'
+                            },
+                            hr: {
+                                borderColor: '#8C8D8E',
+                                width: '100%',
+                                borderWidth: 1,
+                                height: 0
+                            },
+                            b: {
+                                color: '#4C5058',
+                                fontSize: 14,
+                                fontWeight: 'bold',
+                                lineHeight: 33
+                            },
+                            per: {
+                                color: '#fff',
+                                backgroundColor: '#4C5058',
+                                padding: [3, 4],
+                                borderRadius: 4
                             }
-                        },
-                        data: overview_individual_securities_position_values
-                    }
-                ]
-            };
+                        }
+                    },
+                    data: overview_individual_securities_position_values
+                }
+            ]
+        };
 
-            option && isaChart.setOption(option);
-
+        option && isaChart.setOption(option);
 
     </script>
 </body>
