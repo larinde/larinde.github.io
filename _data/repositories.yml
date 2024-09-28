@@ -1,9 +1,6 @@
 github_users:
   - larinde
-  - alshedivat
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
   - larinde/investing-ui
   - larinde/insight-web

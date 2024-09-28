@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /investment_themes/
-title: Investment Themes
+title: investment themes
 description: 
 nav: false
 nav_order: 6

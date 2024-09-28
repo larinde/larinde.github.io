@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /portfolio/
-title: Portfolio Overview
+title: portfolio overview
 description: Investment portfolio insights
 nav: true
 nav_order: 6
