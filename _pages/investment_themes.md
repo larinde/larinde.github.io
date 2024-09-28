@@ -1,8 +1,8 @@
 ---
 layout: page
-title: themes(investing)
 permalink: /investment_themes/
-description: Investment themes
+title: Investment Themes
+description: 
 nav: true
 nav_order: 6
 category : js
@@ -15,7 +15,7 @@ isa_portfolio:  |
 ## Genomics
 
 1. CRISPR Therapeutics AG (CRSP), Intellia Therapeutics (NTLA), Editas Medicine (EDIT)
-    - Advanced genome editing companies
+    - Leading gene editing companies
     - Thumb twiddling, while waiting for impactful progress and reasonable entry points
 2. AquaBounty Technologies Inc. (AQB)
    - Specialises in land-based seafood farming
@@ -27,6 +27,13 @@ isa_portfolio:  |
     - Manufactures 3D-printers and provides additive manufacturing solutions across a very broad range of industries.
     - Challenges in automation and mass production of 3D-printed components.
     - Probably still struggling to streamline processes across acquired businesses.
+2. Nano Dimension (NNDM)
+   - _TODO_
+
+## Clean Energy & Energy Storage
+
+1. QuantumScape (QS)
+   - _TODO_
 
 ## FinTech
 

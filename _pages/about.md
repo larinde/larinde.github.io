@@ -11,11 +11,10 @@ profile:
   more_info: >
     <p>olarinde.ajai@kowegsoftware.co.uk</p>
     <p>London, UK</p>
-    <p>SE3 7QS</p>
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+# news: true # includes a list of news items
+# selected_papers: true # includes a list of papers marked as "selected={true}"
+# social: true # includes social icons at the bottom of the page
 ---
 
 Technical Architect with extensive experience in designing, implementing and integrating complex distributed software systems.
