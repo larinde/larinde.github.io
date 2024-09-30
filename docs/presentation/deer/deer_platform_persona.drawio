@@ -1,0 +1,31 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
+  <diagram name="Page-1" id="z4zl0eoIFx24ypsDX28F">
+    <mxGraphModel dx="782" dy="506" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vCtDCWOSPJlQE7wY6d44-4" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Front Office Trader, Salesperson&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Trade or sell regulated financial instruments.&lt;/li&gt;&lt;li&gt;Reports trade activities on a daily basis.&lt;br&gt;&lt;/li&gt;&lt;li&gt;Obligated to follow local and global financial regulations.&lt;/li&gt;&lt;li&gt;Obligated to complete trainings/recertification and follow policies in a timely manner.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="281.5" y="80" width="408.5" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="vCtDCWOSPJlQE7wY6d44-6" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Level 1 Supervisor&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Supervises activites of traders and salespeople on a daily basis.&lt;/li&gt;&lt;li&gt;Signs off reports on a daily basis.&lt;/li&gt;&lt;li&gt;Raises queries to resolve issues in the event of a notification or alert.&lt;/li&gt;&lt;li&gt;Escalates critcal events to Level 1 Supervisor.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="281.5" y="220" width="408.5" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="vCtDCWOSPJlQE7wY6d44-8" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Level 2 Supervisor&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Responsible for handling escalations raised by Level 1 Supervisor.&lt;/li&gt;&lt;li&gt;Stands in as delegate in the abscence of a Level 1 Supervisor.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="281.5" y="350" width="408.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="vCtDCWOSPJlQE7wY6d44-10" value="" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="200" y="100" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vCtDCWOSPJlQE7wY6d44-11" value="" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="200" y="240" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vCtDCWOSPJlQE7wY6d44-12" value="" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="200" y="370" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vCtDCWOSPJlQE7wY6d44-13" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 15px;&quot;&gt;User Roles and Personas&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="290" y="40" width="270" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
