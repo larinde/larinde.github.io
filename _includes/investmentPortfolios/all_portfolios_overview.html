@@ -5,6 +5,11 @@
     <title>Portfolio Overview</title>
     <!-- Include the ECharts file you just downloaded -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <!-- cheerio lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cheerio/1.0.0/dist/browser/cheerio.min.js"
+        integrity="sha512-E2KFu1BKX9iAs9NTkG597dp9fhuIlDv7qznIGNTXY6qovDf5N7Rm4dJDC1M2PCFi76S8QEaBh6mtSy6qtuLFFQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body>
@@ -35,26 +40,26 @@
         ];
 
         var overview_individual_portfolio_values = [
-            { value: 89000, name: 'ISA' },
-            { value: 68000, name: 'TRADE' },
-            { value: 72000, name: 'SIPP', selected: true }
+            { value: 131750, name: 'ISA' },
+            { value: 73000, name: 'TRADE' },
+            { value: 95540, name: 'SIPP', selected: true }
         ];
 
         var overview_individual_securities_position_values = [
-            { value: (100 + 5 + 15) * 430.35, name: 'MSFT' },
-            { value: (35 + 50 + 200) * 186.50, name: 'AMZN' },
-            { value: (100 + 20 + 100) * 205.0, name: 'AMAT' },
-            { value: (200 + 1600 + 440) * 13.9, name: 'NU' },
-            { value: (0 + 0 + 150) * 120.75, name: 'NVO' },
-            { value: (80 + 1121 + 500) * 8.00, name: 'SOFI' },
-            { value: (0 + 50 + 0) * 157.50, name: 'GOOGL' },
-            { value: (0 + 96 + 128) * 48, name: 'CRSP' },
-            { value: (336 + 150 + 206) * 22, name: 'NTLA' },
-            { value: (0 + 10 + 0) * 827.20, name: 'LRCX' },
-            { value: (5 + 30 + 31) * 122.51, name: 'CAVA' },
-            { value: (200 + 390 + 97) * 1.75, name: 'PACB' },
-            { value: (0 + 45 + 50) * 178.0, name: 'TSM' },
-            { value: (75 + 705 + 19) * 6.0, name: 'QS' }
+            { value: (60 + 5 + 15) * 439.0, name: 'MSFT' },
+            { value: (35 + 50 + 200) * 219, name: 'AMZN' },
+            { value: (100 + 20 + 100) * 177.0, name: 'AMAT' },
+            { value: (200 + 1600 + 440) * 12.15, name: 'NU' },
+            { value: (0 + 0 + 125) * 110, name: 'NVO' },
+            { value: (0 + 1141 + 530) * 16.00, name: 'SOFI' },
+            { value: (0 + 50 + 0) * 175, name: 'GOOGL' },
+            { value: (0 + 101 + 128) * 51.18, name: 'CRSP' },
+            { value: (340 + 394 + 212) * 14.53, name: 'NTLA' },
+            { value: (0 + 110 + 40) * 78.0, name: 'LRCX' },
+            { value: (5 + 25 + 31) * 147.50, name: 'CAVA' },
+            { value: (200 + 560 + 103) * 2.05, name: 'PACB' },
+            { value: (0 + 30 + 50) * 201.060, name: 'TSM' },
+            { value: (75 + 780 + 35) * 5.55, name: 'QS' }
         ];
 
         option = {
