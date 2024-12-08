@@ -10,14 +10,14 @@
     {
       "position": "AMZN",
       "bookCost": 34516,
-      "marketValue": 43752,
+      "marketValue": 45284,
       "quantity": 200,
       "averagePrice": 172.58
     },
     {
       "position": "NU",
       "bookCost": 9601.0,
-      "marketValue": 19376.0,
+      "marketValue": 19264.0,
       "quantity": 1600,
       "averagePrice": 6.0
     },
@@ -38,7 +38,7 @@
     {
       "position": "CAVA",
       "bookCost": 1942,
-      "marketValue": 3688.20,
+      "marketValue": 3762.20,
       "quantity": 25,
       "averagePrice": 77.67
     },
