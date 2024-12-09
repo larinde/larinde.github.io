@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>ISA Portfolio</title>
+    <title>TRADE Portfolio</title>
     <!-- Include the ECharts file you just downloaded -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js" ></script>
 
@@ -14,10 +14,10 @@
         var url = "https://raw.githubusercontent.com/larinde/larinde.github.io/main/dump/isa_portfolio_data.json";
 
         async function loadPortfolioData() {
-            console.log('******* loading portfolio data *******')
+            console.log('******* loading portfolio data ******')
             const response = await fetch(url)
             const json = await response.json()
-            json['isaPortfolio'].forEach(cert => {
+            json['tradePortfolio'].forEach(cert => {
                 portfolioData.push([cert['position'], cert['bookCost'], cert['marketValue']])
                 portfolioPieChartData.push({value: cert['marketValue'], name: cert['position']})
             });
@@ -34,7 +34,7 @@
                 var barChartTitle = "Asset Distribution"
                 var app = {};
                 var barChartDom = document.getElementById('portfolioBarChart');
-                var isaChart = echarts.init(barChartDom, 'dark');
+                var tradeChart = echarts.init(barChartDom, 'dark');
                 var option;
 
                 option = {
@@ -56,7 +56,7 @@
                     // to a column of dataset.source by default.
                     series: [{ type: 'bar' }, { type: 'bar' }]
                 };
-                option && isaChart.setOption(option);
+                option && tradeChart.setOption(option);
             }
 
             
@@ -65,7 +65,7 @@
                 var pieChartDom = document.getElementById('portfolioPieChart');
                 var pieChart = echarts.init(pieChartDom, 'dark');
                 var pieChartOption;
-                var pieChartTitle = 'ISA Portfolio Allocation';
+                var pieChartTitle = 'Trade Portfolio Allocation';
 
                 pieChartOption = {
                     title: {

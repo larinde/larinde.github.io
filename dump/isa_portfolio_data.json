@@ -125,7 +125,7 @@
     {
       "position": "AMZN",
       "bookCost": 3399.06,
-      "marketValue": 7654.0,
+      "marketValue": 7924.70,
       "quantity": 35,
       "averagePrice": 97.12
     },
@@ -145,9 +145,9 @@
     },
     {
       "position": "MSFT",
-      "bookCost": 7719.00,
-      "marketValue": 26340.00,
-      "quantity": 60,
+      "bookCost": 6332.25,
+      "marketValue": 22256.00,
+      "quantity": 50,
       "averagePrice": 126.65
     },
     {
@@ -160,9 +160,23 @@
     {
       "position": "NTLA",
       "bookCost": 9275.0,
-      "marketValue": 4911.00,
+      "marketValue": 4960.60,
       "quantity": 340,
       "averagePrice": 27.28
+    },
+    {
+      "position": "FNMA",
+      "bookCost": 6897.65,
+      "marketValue": 11562.00,
+      "quantity": 4100,
+      "averagePrice": 1.715
+    },
+    {
+      "position": "FMCC",
+      "bookCost": 1664.00,
+      "marketValue": 2790.67,
+      "quantity": 1000,
+      "averagePrice": 1.66
     },
     {
       "position": "QS",
@@ -187,24 +201,10 @@
     },
     {
       "position": "PACB",
-      "bookCost": 4897.00,
-      "marketValue": 414.00,
-      "quantity": 200,
-      "averagePrice": 24.49
-    },
-    {
-      "position": "FNMA",
-      "bookCost": 6897.65,
-      "marketValue": 9481.68,
-      "quantity": 4052,
-      "averagePrice": 1.70
-    },
-    {
-      "position": "FMCC",
-      "bookCost": 1664.00,
-      "marketValue": 42300.00,
-      "quantity": 1000,
-      "averagePrice": 1.66
+      "bookCost": 4972.17,
+      "marketValue": 507.60,
+      "quantity": 235,
+      "averagePrice": 21.160
     }
   ]  
 }
