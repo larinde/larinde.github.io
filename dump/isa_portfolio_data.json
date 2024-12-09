@@ -123,27 +123,6 @@
       "averagePrice": "AveragePrice"
     },
     {
-      "position": "AMZN",
-      "bookCost": 3399.06,
-      "marketValue": 7924.70,
-      "quantity": 35,
-      "averagePrice": 97.12
-    },
-    {
-      "position": "NU",
-      "bookCost": 1681.30,
-      "marketValue": 2422.00,
-      "quantity": 200,
-      "averagePrice": 8.41
-    },
-    {
-      "position": "CAVA",
-      "bookCost": 206.00,
-      "marketValue": 736.15,
-      "quantity": 5,
-      "averagePrice": 41.20
-    },
-    {
       "position": "MSFT",
       "bookCost": 6332.25,
       "marketValue": 22256.00,
@@ -151,18 +130,18 @@
       "averagePrice": 126.65
     },
     {
+      "position": "AMZN",
+      "bookCost": 3399.06,
+      "marketValue": 7924.70,
+      "quantity": 35,
+      "averagePrice": 97.12
+    },
+    {
       "position": "AMAT",
       "bookCost": 3797.04,
       "marketValue": 17650,
       "quantity": 100,
       "averagePrice": 37.97
-    },
-    {
-      "position": "NTLA",
-      "bookCost": 9275.0,
-      "marketValue": 4960.60,
-      "quantity": 340,
-      "averagePrice": 27.28
     },
     {
       "position": "FNMA",
@@ -177,6 +156,27 @@
       "marketValue": 2790.67,
       "quantity": 1000,
       "averagePrice": 1.66
+    },
+    {
+      "position": "NU",
+      "bookCost": 1681.30,
+      "marketValue": 2422.00,
+      "quantity": 200,
+      "averagePrice": 8.41
+    },
+    {
+      "position": "CAVA",
+      "bookCost": 206.00,
+      "marketValue": 664.45,
+      "quantity": 5,
+      "averagePrice": 41.20
+    },
+    {
+      "position": "NTLA",
+      "bookCost": 9275.0,
+      "marketValue": 4960.60,
+      "quantity": 340,
+      "averagePrice": 27.28
     },
     {
       "position": "QS",
