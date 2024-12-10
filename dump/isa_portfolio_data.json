@@ -130,18 +130,18 @@
       "averagePrice": 126.65
     },
     {
-      "position": "AMZN",
-      "bookCost": 3399.06,
-      "marketValue": 7924.70,
-      "quantity": 35,
-      "averagePrice": 97.12
-    },
-    {
       "position": "AMAT",
       "bookCost": 3797.04,
       "marketValue": 17650,
       "quantity": 100,
       "averagePrice": 37.97
+    },
+    {
+      "position": "AMZN",
+      "bookCost": 3399.06,
+      "marketValue": 7924.70,
+      "quantity": 35,
+      "averagePrice": 97.12
     },
     {
       "position": "FNMA",
@@ -184,13 +184,6 @@
       "marketValue": 402.0,
       "quantity": 75,
       "averagePrice": 12.19
-    },
-    {
-      "position": "AQB",
-      "bookCost": 0.06,
-      "marketValue": 0.20,
-      "quantity": 85,
-      "averagePrice": 0.27
     },
     {
       "position": "CRBU",
