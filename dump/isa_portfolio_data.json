@@ -186,6 +186,13 @@
       "averagePrice": 26.41
     },
     {
+      "position": "CRSP",
+      "bookCost": 975.75,
+      "marketValue": 1192.56,
+      "quantity": 24,
+      "averagePrice": 40.66
+    },
+    {
       "position": "QS",
       "bookCost": 1053.84,
       "marketValue": 525.0,
