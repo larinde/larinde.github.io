@@ -66,6 +66,9 @@
             { value: (100 + 780 + 250) * 5.26, name: 'QS' },
             { value: (310 + 560 + 104) * 1.840, name: 'PACB' }
         ];
+        const compFctn = (a, b) => (b.value - a.value);
+        overview_individual_securities_position_values.sort(compFctn);
+
 
         option = {
             tooltip: {

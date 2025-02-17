@@ -24,6 +24,11 @@
             portfolioData.shift();
             portfolioPieChartData.shift();
 
+            //sort data in descending order
+            const compFctn = (a, b) => (b.value - a.value);
+            portfolioPieChartData.sort(compFctn);
+            portfolioData.sort(compFctn);
+
             retrieveCurrentStockPrice();
             renderPortfolioCharts();
             renderPortfolioPieChart();
