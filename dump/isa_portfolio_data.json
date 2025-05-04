@@ -10,107 +10,100 @@
     {
       "position": "AMZN",
       "bookCost": 34516,
-      "marketValue": 45714,
+      "marketValue": 37980,
       "quantity": 200,
       "averagePrice": 172.58
     },
     {
       "position": "NU",
       "bookCost": 9601.0,
-      "marketValue": 21872.0,
+      "marketValue": 19872.0,
       "quantity": 1600,
       "averagePrice": 6.0
     },
     {
       "position": "SOFI",
       "bookCost": 10271,
-      "marketValue": 18472,
+      "marketValue": 14491,
       "quantity": 1141,
       "averagePrice": 9.00
     },
     {
       "position": "GOOGL",
       "bookCost": 5348.0,
-      "marketValue": 9263.0,
+      "marketValue": 8190.0,
       "quantity": 50,
       "averagePrice": 106.96
     },
     {
       "position": "CAVA",
       "bookCost": 1942,
-      "marketValue": 3270.20,
+      "marketValue": 2417.20,
       "quantity": 25,
       "averagePrice": 77.67
     },
     {
-      "position": "TSM",
-      "bookCost": 4351,
-      "marketValue": 5098.80,
-      "quantity": 25,
-      "averagePrice": 145.02
+      "position": "BRK.B",
+      "bookCost": 2638,
+      "marketValue": 2709.0,
+      "quantity": 5,
+      "averagePrice": 527.53
     },
     {
       "position": "MSFT",
-      "bookCost": 1162,
-      "marketValue": 2040,
+      "bookCost": 1359,
+      "marketValue": 2174,
       "quantity": 5,
-      "averagePrice": 232.39
+      "averagePrice": 271.71
     },
     {
       "position": "AMAT",
       "bookCost": 4440,
-      "marketValue": 3390,
+      "marketValue": 3105.0,
       "quantity": 20,
       "averagePrice": 221.98
     },
     {
       "position": "LRCX",
       "bookCost": 10278,
-      "marketValue": 9115.40,
+      "marketValue": 8213.0,
       "quantity": 110,
       "averagePrice": 93.44
     },
     {
       "position": "CRBU",
-      "bookCost": 367.06,
-      "marketValue": 216,
-      "quantity": 160,
+      "bookCost": 509.78,
+      "marketValue": 285.97,
+      "quantity": 325,
       "averagePrice": 2.29
     },
     {
       "position": "NTLA",
-      "bookCost": 7680.0,
-      "marketValue": 4341,
-      "quantity": 405,
-      "averagePrice": 19.49
+      "bookCost": 9085.0,
+      "marketValue": 5087.0,
+      "quantity": 555,
+      "averagePrice": 16.37
     },
     {
       "position": "CRSP",
-      "bookCost": 5254.0,
-      "marketValue": 6161.56,
-      "quantity": 124,
-      "averagePrice": 49.69
+      "bookCost": 6202.0,
+      "marketValue": 4782.0,
+      "quantity": 125,
+      "averagePrice": 49.62
     },
     {
       "position": "QS",
       "bookCost": 5194,
-      "marketValue": 4095,
+      "marketValue": 3104.0,
       "quantity": 780,
       "averagePrice": 6.66
     },
     {
-      "position": "AQB",
-      "bookCost": 10281.06,
-      "marketValue": 119.020,
-      "quantity": 160,
-      "averagePrice": 64.27
-    },
-    {
       "position": "PACB",
-      "bookCost": 1136,
-      "marketValue": 1170,
-      "quantity": 560,
-      "averagePrice": 2.03
+      "bookCost": 1204,
+      "marketValue": 684.0,
+      "quantity": 600,
+      "averagePrice": 1.14
     },
     {
       "position": "NVDA",
@@ -131,16 +124,16 @@
     },
     {
       "position": "MSFT",
-      "bookCost": 6332.25,
-      "marketValue": 20405.00,
-      "quantity": 50,
+      "bookCost": 4432.75,
+      "marketValue": 15215.20,
+      "quantity": 35,
       "averagePrice": 126.65
     },
     {
       "position": "AMAT",
       "bookCost": 3797.04,
-      "marketValue": 16965,
-      "quantity": 100,
+      "marketValue": 2847.75,
+      "quantity": 75,
       "averagePrice": 37.97
     },
     {
@@ -159,57 +152,57 @@
     },
     {
       "position": "FMCC",
-      "bookCost": 1744.00,
-      "marketValue": 6547.67,
-      "quantity": 1015,
-      "averagePrice": 1.66
+      "bookCost": 2128.00,
+      "marketValue": 5643.0,
+      "quantity": 1100,
+      "averagePrice": 1.93
     },
     {
       "position": "NU",
-      "bookCost": 1681.30,
-      "marketValue": 2734.00,
+      "bookCost": 1681.0,
+      "marketValue": 2484.00,
       "quantity": 200,
       "averagePrice": 8.41
     },
     {
       "position": "CAVA",
       "bookCost": 206.00,
-      "marketValue": 654.45,
+      "marketValue": 483.30,
       "quantity": 5,
       "averagePrice": 41.20
     },
     {
       "position": "NTLA",
       "bookCost": 9505.860,
-      "marketValue": 3859.20,
-      "quantity": 355,
+      "marketValue": 3300.0,
+      "quantity": 360,
       "averagePrice": 26.41
     },
     {
       "position": "CRSP",
       "bookCost": 975.75,
-      "marketValue": 1192.56,
+      "marketValue": 918.24,
       "quantity": 24,
       "averagePrice": 40.66
     },
     {
       "position": "QS",
       "bookCost": 1053.84,
-      "marketValue": 525.0,
+      "marketValue": 398.0,
       "quantity": 100,
       "averagePrice": 10.54
     },
     {
       "position": "CRBU",
       "bookCost": 323.59,
-      "marketValue": 141.75,
+      "marketValue": 92.39,
       "quantity": 105,
       "averagePrice": 3.08
     },
     {
       "position": "PACB",
       "bookCost": 5118.84,
-      "marketValue": 564.2,
+      "marketValue": 353.40,
       "quantity": 310,
       "averagePrice": 16.51
     }
