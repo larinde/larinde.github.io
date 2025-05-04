@@ -10,6 +10,10 @@
         var portfolioData = [
           ['Position', 'BookCost', 'MarketValue']
         ];
+        var portfolioDataPositions = [];
+        var portfolioDataBookCosts = [];
+        var portfolioDataLosses = [];
+        var portfolioDataGains = [];
         var portfolioPieChartData = [];
         var url = "https://raw.githubusercontent.com/larinde/larinde.github.io/main/dump/isa_portfolio_data.json";
 
@@ -20,10 +24,20 @@
             json['isaPortfolio'].forEach(cert => {
                 portfolioData.push([cert['position'], cert['bookCost'], cert['marketValue']])
                 portfolioPieChartData.push({value: cert['marketValue'], name: cert['position']})
+                // const beverage = age >= 21 ? "Beer" : "Juice";
+                portfolioDataPositions.push([cert['position']])
+                portfolioDataBookCosts.push([cert['bookCost']])
+                portfolioDataLosses.push([cert['bookCost'] > cert['marketValue'] ? cert['marketValue'] - cert['bookCost'] : 0])
+                portfolioDataGains.push([cert['marketValue'] > cert['bookCost'] ? cert['marketValue'] - cert['bookCost'] : 0])
             });
             portfolioData.shift();
             portfolioPieChartData.shift();
 
+            portfolioDataPositions.shift();
+            portfolioDataBookCosts.shift();
+            portfolioDataLosses.shift();
+            portfolioDataGains.shift();
+ 
             //sort data in descending order
             const compFctn = (a, b) => (b.value - a.value);
             portfolioPieChartData.sort(compFctn);
@@ -32,6 +46,7 @@
             retrieveCurrentStockPrice();
             renderPortfolioCharts();
             renderPortfolioPieChart();
+            renderPortfolioProfitLossChart();
         };
 
         function renderPortfolioCharts() {
@@ -103,6 +118,97 @@
                 pieChartOption && pieChart.setOption(pieChartOption);
             }
 
+
+            function renderPortfolioProfitLossChart() {
+                console.log('******* rendering portfolio Profit vs Loss chart *******');
+                var profitLossChartDom = document.getElementById('portfolioProfitLossChart');
+                var profitLossChart = echarts.init(profitLossChartDom, 'dark');
+                var profitLossChartOption;
+                var profitLossChartTitle = 'ISA Portfolio Gain vs Loss';
+                console.log(portfolioDataLosses);
+
+                profitLossChartOption = {
+                    title: {
+                        subtext: profitLossChartTitle,
+                        left: 'center'
+                    },
+                    tooltip: {
+                        trigger: 'axis',
+                        axisPointer: {
+                            type: 'shadow'
+                        }
+                    },
+                    legend: {
+                        orient: 'horizontal',
+                        left: 'right',
+                        data: ['Gains', 'Loss', 'BookCost']
+                    },
+                    grid: {
+                        left: '3%',
+                        right: '4%',
+                        bottom: '3%',
+                        containLabel: true
+                    },
+                    xAxis: [
+                        {
+                            type: 'value'
+                        }
+                    ],
+                    yAxis: [
+                        {
+                            type: 'category',
+                            axisTick: {
+                                show: false
+                            },
+                            data: portfolioDataPositions
+                        }
+                    ],
+                    series: [
+                        {
+                            name: 'Gains',
+                            type: 'bar',
+                            label: {
+                                show: true,
+                                position: 'inside'
+                            },
+                            emphasis: {
+                                focus: 'series'
+                            },
+                            data: portfolioDataGains
+                        },
+                        {
+                            name: 'Loss',
+                            type: 'bar',
+                            stack: 'Total',
+                            label: {
+                                show: true
+                            },
+                            emphasis: {
+                                focus: 'series'
+                            },
+                            data: portfolioDataLosses
+                        },
+                        {
+                            name: 'BookCost',
+                            type: 'bar',
+                            stack: 'Total',
+                            label: {
+                                show: true,
+                                position: 'left'
+                            },
+                            emphasis: {
+                                focus: 'series'
+                            },
+                            data: portfolioDataBookCosts
+                        }
+                    ]
+                };
+                profitLossChartOption && profitLossChart.setOption(profitLossChartOption);
+
+            }
+            
+            
+
             async function retrieveCurrentStockPrice(){
                 console.log('------------------ web scraping ------------------');                
                 var url = 'https://finviz.com/quote.ashx?t=MSFT&p=d';
@@ -153,7 +259,8 @@
 <body>
     <!-- Prepare a DOM with a defined width and height for ECharts -->
     <div id="portfolioBarChart" style="width: 600px;height:400px;"></div>
-    <div id="portfolioPieChart" style="width: 600px;height:400px;"></div><br/><br /><br />
+    <div id="portfolioPieChart" style="width: 600px;height:400px;"></div><br />
+    <div id="portfolioProfitLossChart" style="width: 600px;height:400px;"></div><br/><br /><br />
     <script type="text/javascript">
         loadPortfolioData();
     </script>
