@@ -125,7 +125,10 @@
                 var profitLossChart = echarts.init(profitLossChartDom, 'dark');
                 var profitLossChartOption;
                 var profitLossChartTitle = 'ISA Portfolio Gain vs Loss';
-                console.log(portfolioDataLosses);
+                console.log(portfolioDataPositions.toString());
+                console.log(portfolioDataGains.toString());
+                console.log(portfolioDataLosses.toString());
+                console.log(portfolioDataBookCosts.toString());  
 
                 profitLossChartOption = {
                     title: {
