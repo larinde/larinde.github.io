@@ -24,7 +24,7 @@
     {
       "position": "SOFI",
       "bookCost": 9005.93,
-      "marketValue": 19299,
+      "marketValue": 21064,
       "quantity": 1000,
       "averagePrice": 9.00
     },
@@ -45,7 +45,7 @@
     {
       "position": "AMAT",
       "bookCost": 4440,
-      "marketValue": 3740.450,
+      "marketValue": 4439.60,
       "quantity": 20,
       "averagePrice": 221.98
     },
