@@ -29,41 +29,6 @@
       "averagePrice": 9.00
     },
     {
-      "position": "GOOGL",
-      "bookCost": 5348.0,
-      "marketValue": 9530.360,
-      "quantity": 50,
-      "averagePrice": 106.96
-    },
-    {
-      "position": "MSFT",
-      "bookCost": 1359,
-      "marketValue": 2530.92,
-      "quantity": 5,
-      "averagePrice": 271.71
-    },
-    {
-      "position": "AMAT",
-      "bookCost": 4440,
-      "marketValue": 4439.60,
-      "quantity": 20,
-      "averagePrice": 221.98
-    },
-    {
-      "position": "LRCX",
-      "bookCost": 10278,
-      "marketValue": 10736.0,
-      "quantity": 110,
-      "averagePrice": 93.44
-    },
-    {
-      "position": "GRAB",
-      "bookCost": 1579.15,
-      "marketValue": 1656.57,
-      "quantity": 307,
-      "averagePrice": 5.14
-    },
-    {
       "position": "NTLA",
       "bookCost": 12100.0,
       "marketValue": 11532.720,
@@ -83,6 +48,41 @@
       "marketValue": 11465.50,
       "quantity": 850,
       "averagePrice": 7.14
+    },
+    {
+      "position": "GOOGL",
+      "bookCost": 5348.0,
+      "marketValue": 9530.360,
+      "quantity": 50,
+      "averagePrice": 106.96
+    },
+    {
+      "position": "LRCX",
+      "bookCost": 10278,
+      "marketValue": 10736.0,
+      "quantity": 110,
+      "averagePrice": 93.44
+    },
+    {
+      "position": "AMAT",
+      "bookCost": 4440,
+      "marketValue": 4439.60,
+      "quantity": 20,
+      "averagePrice": 221.98
+    },
+    {
+      "position": "MSFT",
+      "bookCost": 1359,
+      "marketValue": 2530.92,
+      "quantity": 5,
+      "averagePrice": 271.71
+    },
+    {
+      "position": "GRAB",
+      "bookCost": 1579.15,
+      "marketValue": 1656.57,
+      "quantity": 307,
+      "averagePrice": 5.14
     },
     {
       "position": "PACB",
