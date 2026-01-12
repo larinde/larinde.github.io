@@ -214,30 +214,65 @@
 
             async function retrieveCurrentStockPrice(){
                 console.log('------------------ web scraping ------------------');                
-                var url = 'https://finviz.com/quote.ashx?t=MSFT&p=d';
+                
+                var stock_symbol = 'NTLA';
+                var url = 'https://finviz.com/quote.ashx?t=' + stock_symbol + '&p=d';
+                
+                //var stock_symbol = 'NTLA:NASDAQ';
+                //url = 'https://www.google.com/finance/quote/' + stock_symbol + '?hl=en';
+                //var url = `https://www.google.com/finance/quote/${stock_symbol}?hl=en`;
+
+
                 var proxyUrl = 'https://cora-anywhere.herokuapp.com/';
                 var headers = {
-                    'Access-Control-Allow-Origin' : '*',
-                    'Access-Control-Allow-Headers' : 'Origin, X-Requested-With, Content-Type, Accept',
-                    'X-Content-Type-Options': 'nosniff'
-                };
-                const response = await fetch(url , {
-                    method : "GET",
-                    mode: "no-cors",
-                    headers : {
                         "X-Content-Type-Options" : "nosniff",
                         "Access-Control-Expose-Headers" : "*",
                         "Access-Control-Allow-Origin" : "*",
                         "Access-Control-Allow-Headers" : "*",
                         "Access-Control-Request-Method" : "*",
                         "Access-Control-Allow-Headers" : "Origin, X-Requested-With, Content-Type, Accept, Authorization"
-                    }
+                };
+                const response = await fetch(url , {
+                    method : "GET",
+                    mode: "no-cors",
+                    headers : headers
                 });
                 const _page = await response.text();
                 
                 const parser = new DOMParser();
                 const node = parser.parseFromString(_page, 'text/html')
-                console.log("OUTPUT: >>>>>>  " + node );
+                console.log("DUMP Scrapped Page: >>>>>>  " + node );
+
+                //<td class="snapshot-td2 cursor-pointer w-[7%]" align="left" data-boxover="cssbody=[tooltip_short_bdy] cssheader=[tooltip_short_hdr] body=[Current stock price] offsetx=[10] offsety=[20] delay=[300]">Price</td>
+                //<td class="snapshot-td2 w-[8%] " align="left" style=""><b>8.70</b></td>
+
+                //const allCells = Array.from(node.querySelectorAll('td.snapshot-td2-cp, td.snapshot-td2'));
+                const allCells = Array.from(node.querySelectorAll('td.snapshot-td2'));
+                // Find the cell containing "Price"
+                let price = null;
+                for (let i = 0; i < allCells.length; i++) {
+                    //console.log("searching ----> " + allCells[i]);
+                    //console.log(node.getElementById('td.snapshot-td2'));
+                    if (allCells[i].textContent.trim() === "Price") {
+                        // The next sibling cell contains the stock price (in bold)
+                        const valueCell = allCells[i + 1];
+                        if (valueCell) {
+                        const bold = valueCell.querySelector('b');
+                        if (bold) {
+                            price = bold.textContent.trim();
+                        } else {
+                            price = valueCell.textContent.trim(); // fallback
+                        }
+                        }
+                        break;
+                    }
+                }
+
+                if (price) {
+                console.log("Stock Price:", price);
+                } else {
+                console.log("Price not found in Finviz HTML.");
+                }
 
 
                 const content = `
