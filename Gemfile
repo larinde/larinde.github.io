@@ -1,10 +1,9 @@
 source 'https://rubygems.org'
 
-
 group :jekyll_plugins do
     #gem 'wdm', '>=0.1.0'
     gem 'classifier-reborn'
-    gem 'jekyll', '~> 4.2'
+    gem 'jekyll', '~> 4.2.0'  # Pin to 4.2.x instead of allowing 4.4.x
     gem 'jekyll-archives'
     gem 'jekyll-email-protect'
     gem 'jekyll-feed'
