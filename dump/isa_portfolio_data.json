@@ -10,22 +10,22 @@
     {
       "position": "AMZN",
       "bookCost": 35248,
-      "marketValue": 47104.0,
+      "marketValue": 19902.0,
       "quantity": 050,
       "averagePrice": 186.82
     },
     {
       "position": "NTLA",
-      "bookCost": 74103.0,
-      "marketValue": 60020.0,
-      "quantity": 5875,
-      "averagePrice": 13.70
+      "bookCost": 81268.0,
+      "marketValue": 71517.0,
+      "quantity": 6020,
+      "averagePrice": 13.50
     },
     {
       "position": "CRSP",
       "bookCost": 10796.0,
-      "marketValue": 9401.0,
-      "quantity": 200,
+      "marketValue": 5398.0,
+      "quantity": 100,
       "averagePrice": 53.98
     },
     {
@@ -62,14 +62,14 @@
       "marketValue": 14286.0,
       "quantity": 100,
       "averagePrice": 89.04
-    }
+    },
     {
       "position": "FNMA",
       "bookCost": 4773.6,
       "marketValue": 4222.8,
       "quantity": 680,
       "averagePrice": 7.02  
-    }
+    },
     {
       "position": "FMCC",
       "bookCost": 32118.42,
