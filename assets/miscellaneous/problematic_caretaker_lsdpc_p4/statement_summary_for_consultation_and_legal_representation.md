@@ -1,8 +1,8 @@
-# Tennancy Issues Preceeding Eviction Notice
+# Tenancy Issues Preceding Eviction Notice
 
 ## Tenancy Agreement
 
-1. The tenancy agreement has the name of the Landlady and does not appear to give her right to anonymity.
+1. The tenancy agreement has the name of the Landlady and does not grant her a right to anonymity.
 
 [Tenancy Agreement](https://larinde.github.io/assets/miscellaneous/problematic_caretaker_lsdpc_p4/tenancy_agreement_ogba.pdf) 
 
@@ -30,7 +30,7 @@
 1. The property was connected to the electricity grid while viewing.
 2. The property was later disconnected after I paid for the tenancy and before I moved in.
 3. The pumping machine and plumbing issues were discovered when the property was reconnected, about 2 days after reconnection to the grid (10-10-2026 to 12-10-2026).
-4. I was forced to postpone my return flight to ensure the plumbing issue was resolved. This was also necessary, as I took on the responsiblity of fetching water daily for my mother and her carer (from a reservoir).
+4. I was forced to postpone my return flight to ensure the plumbing issue was resolved. This was also necessary, as I took on the responsibility of fetching water daily for my mother and her carer (from a reservoir).
 5. I waited in vain for the caretaker to fulfil her obligation. Eventually, I had to return home (in the UK), leaving my mother and her carer with the responsibility and hardship of fetching unhygienic water daily from the reservoir.
 6. Other issues that were promised but partially or never fulfilled include:
    - Poorly fitted and incomplete sink installation.
@@ -69,7 +69,20 @@
 [Eviction notice from Caretaker](https://larinde.github.io/assets/miscellaneous/problematic_caretaker_lsdpc_p4/illegal_quit_notice_2.jpg)<br>
 [Eviction notice from Caretaker](https://larinde.github.io/assets/miscellaneous/problematic_caretaker_lsdpc_p4/illegal_quit_notice.jpg)<br>
 [Response to illegal eviction notice](https://larinde.github.io/assets/miscellaneous/problematic_caretaker_lsdpc_p4/Response_To_Illegal_Quit_Notice_17-07-2026.pdf)<br>
-[Formal notice of intention to renew tennancy](https://larinde.github.io/assets/miscellaneous/problematic_caretaker_lsdpc_p4/FORMAL_NOTICE_OF_EXERCISE_OF_OPTION_TO_RENEW_YEARLY_TENANCY_17-07-2026.pdf)<br>
+[Formal notice of intention to renew Tenancy](https://larinde.github.io/assets/miscellaneous/problematic_caretaker_lsdpc_p4/FORMAL_NOTICE_OF_EXERCISE_OF_OPTION_TO_RENEW_YEARLY_TENANCY_17-07-2026.pdf)<br>
 [Caretaker's response to challenged notice](https://larinde.github.io/assets/miscellaneous/problematic_caretaker_lsdpc_p4/response_from_caretaker_regarding_validity_of_eviction_notice.PNG)<br>
 [Plumbing issues predate tenancy](https://larinde.github.io/assets/miscellaneous/problematic_caretaker_lsdpc_p4/following_up_regarding_disconnection_from_grid.jpg)<br>
 [Plumbing issues predate tenancy](https://larinde.github.io/assets/miscellaneous/problematic_caretaker_lsdpc_p4/raising_deteriorating_plumbing_issues_12_days_into_the_tennancy.jpg)<br>
+
+
+## Unpermitted Entry into the Premise
+
+1. On 25-08-2026, the caretaker visited the property without prior notice or permission. This time, she was accompanied by the alleged owner of the property and a third person with undisclosed identity.
+2. This would be the second unauthorised entry into the property.
+3. They falsely claimed that they had informed me and I was aware of the visit.
+4. I reported the incident to the Chief Security Officer and Estate Administrator. 
+5. Below is a message from the caretaker regarding her unauthorised visit and my documented report to the estate administration.
+
+[Report to Estate Security](https://larinde.github.io/assets/miscellaneous/problematic_caretaker_lsdpc_p4/FORMAL_COMPLAINT_OF_UNAUTHORISED_ENTRY_INTO_RENTED_PROPERTY_BY_CARETAKER.pdf)<br>
+[Response from Caretaker after incident was reported](https://larinde.github.io/assets/miscellaneous/problematic_caretaker_lsdpc_p4/message_from_caretaker_after_reporting_unauthorised_visit_to_the_property_25-08-2026.PNG)<br>
+

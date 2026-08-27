@@ -2,7 +2,7 @@
 
 ## Tenancy Agreement
 
-1. The tenancy agreement has the name of the Landlady and does not appear to give her right to anonymity.
+1. The tenancy agreement has the name of the Landlady and does not grant her a right to anonymity.
 
 [Tenancy Agreement](https://larinde.github.io/assets/miscellaneous/problematic_caretaker_lsdpc_p4/tenancy_agreement_ogba.pdf) 
 
@@ -30,7 +30,7 @@
 1. The property was connected to the electricity grid while viewing.
 2. The property was later disconnected after I paid for the tenancy and before I moved in.
 3. The pumping machine and plumbing issues were discovered when the property was reconnected, about 2 days after reconnection to the grid (10-10-2026 to 12-10-2026).
-4. I was forced to postpone my return flight to ensure the plumbing issue was resolved. This was also necessary, as I took on the responsiblity of fetching water daily for my mother and her carer (from a reservoir).
+4. I was forced to postpone my return flight to ensure the plumbing issue was resolved. This was also necessary, as I took on the responsibility of fetching water daily for my mother and her carer (from a reservoir).
 5. I waited in vain for the caretaker to fulfil her obligation. Eventually, I had to return home (in the UK), leaving my mother and her carer with the responsibility and hardship of fetching unhygienic water daily from the reservoir.
 6. Other issues that were promised but partially or never fulfilled include:
    - Poorly fitted and incomplete sink installation.
@@ -80,6 +80,7 @@
 4. I reported the incident to the Chief Security Officer and Estate Administrator. 
 5. Below is a message from the caretaker regarding her unauthorised visit and my documented report to the estate administration.
 
-![Response from Caretaker after incident was reported](https://larinde.github.io/assets/miscellaneous/problematic_caretaker_lsdpc_p4/message_from_caretaker_after_reporting_unauthorised_visit_to_the_property_25-08-2026.PNG)<br>
 [Report to Estate Security](https://larinde.github.io/assets/miscellaneous/problematic_caretaker_lsdpc_p4/FORMAL_COMPLAINT_OF_UNAUTHORISED_ENTRY_INTO_RENTED_PROPERTY_BY_CARETAKER.pdf)<br>
+![Response from Caretaker after incident was reported](https://larinde.github.io/assets/miscellaneous/problematic_caretaker_lsdpc_p4/message_from_caretaker_after_reporting_unauthorised_visit_to_the_property_25-08-2026.PNG)<br>
+
 
